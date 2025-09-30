@@ -6,10 +6,10 @@
       apt:
         name: apache2
         state: present      
-      when: ansible_os_family == "Dabian"
+      when: ansible_os_family == "Debian"
 
     - name: start apache2 service
       service:
         name: apache2
         state: started
-      when: ansible_os_family == "Dabian"
+      when: ansible_os_family == "Debian"
