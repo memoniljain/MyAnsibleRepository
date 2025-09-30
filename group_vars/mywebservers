@@ -1,2 +1,4 @@
 ---
 servername: apache2
+myjavaonubantu: openjdk-21-jdk
+myjavaonredhat: java-21-amazon-corretto-devel

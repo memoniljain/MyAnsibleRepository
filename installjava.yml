@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: install java on Debian server
+      apt:
+        name: "{{myjavaonubantu}}"
+        status: present
+      when: ansible_os_family == "Debian"
+
+    - name: install java on amazon machine
+      dnf:
+        name: "{{myjavaonredhat}}"
+        status: present
+      when: ansible_os_family == "RedHat"
