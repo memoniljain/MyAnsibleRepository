@@ -5,11 +5,11 @@
     - name: install java on Debian server
       apt:
         name: "{{myjavaonubantu}}"
-        status: present
+        state: present
       when: ansible_os_family == "Debian"
 
     - name: install java on amazon machine
       dnf:
         name: "{{myjavaonredhat}}"
-        status: present
+        state: present
       when: ansible_os_family == "RedHat"
