@@ -1,1 +1,2 @@
-servername= apache2
+---
+servername: apache2
