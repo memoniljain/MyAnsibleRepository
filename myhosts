@@ -7,4 +7,4 @@
 172.31.43.95
 
 [mywebservers:vars]
-servername: apache2
+servername= apache2
