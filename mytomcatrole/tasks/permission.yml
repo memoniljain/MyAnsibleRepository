@@ -1,0 +1,8 @@
+---
+- name: assign permission to user
+  command:
+    cmd: "chown -R tomcat: /opt/tomcat"
+
+- name: assign execute permission to user on bin folder
+  command:
+    cmd: "sh -c 'chmod +x /opt/tomcat/bin/*.sh'"

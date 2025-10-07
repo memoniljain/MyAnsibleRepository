@@ -1,0 +1,5 @@
+---
+- hosts: myjavaserver
+  become: yes
+  roles:
+    - mytomcatrole
